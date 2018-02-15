@@ -31,14 +31,40 @@ healthcareData.forEach(function(healthcareObject) {
 healthcareArray.push(L.circleMarker(latlon, options))
   });
 
+  //Accomodation
+  var accomodationArray = []  // empty array
+  accomodationData.forEach(function(accomodationObject) {
+    var latlon = [accomodationObject.Y, accomodationObject.X];
+    var options = {
+      radius: 2,
+      stroke: false,
+      fillColor: accomodationObject.color,
+    };
+  accomodationArray.push(L.circleMarker(latlon, options))
+    });
+
+    //Education
+    var educationArray = []  // empty array
+    educationData.forEach(function(educationObject) {
+      var latlon = [educationObject.Y, educationObject.X];
+      var options = {
+        radius: 2,
+        stroke: false,
+        fillColor: educationObject.color,
+      };
+    educationArray.push(L.circleMarker(latlon, options))
+      });
 
 var finance = LayerGroup = L.layerGroup(financeArray);
 var healthcare = LayerGroup = L.layerGroup(healthcareArray);
-
+var accomodation = LayerGroup = L.layerGroup(accomodationArray);
+var education = LayerGroup = L.layerGroup(educationArray);
 
 var Sectorslayer = {
   "Healthcare": healthcare,
-  "Finance": finance
+  "Finance": finance,
+  "Food Service and Accomodation": accomodation,
+  "Education": education
 };
 
 L.control.layers(Sectorslayer).addTo(map);
