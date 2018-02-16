@@ -73,4 +73,4 @@ var Sectorslayer = {
   "Education": education
 };
 
-L.control.layers(Sectorslayer).addTo(map);
+L.control.layers(Sectorslayer,{collapsed:false}).addTo(map);
