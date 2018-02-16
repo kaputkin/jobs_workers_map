@@ -1,4 +1,5 @@
-var healthcareData =[
+var healthcareData = 
+[
   {
     "X": -74.0799462627203,
     "Y": 40.6424653607889,
