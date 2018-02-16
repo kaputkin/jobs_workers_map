@@ -1,7 +1,7 @@
-var healthcareData = 
+var healthcareData =
 [
   {
-    "X": -74.0799462627203,
+    "X": -74.0799462627203, //five decimals
     "Y": 40.6424653607889,
     "id": 20,
     "color": "#dd0074"
