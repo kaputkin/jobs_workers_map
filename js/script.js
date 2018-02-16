@@ -15,7 +15,7 @@ var map =
 
 //Finance
 var financeArray = []  // empty array
-financeData.forEach(function(financeObject) {
+finance_data.forEach(function(financeObject) {
   var latlon = [financeObject.Y, financeObject.X];
   var options = {
     radius: 2,
@@ -27,7 +27,7 @@ financeArray.push(L.circleMarker(latlon, options))
 
 //Healthcare
 var healthcareArray = []  // empty array
-healthcareData.forEach(function(healthcareObject) {
+healthcare_data.forEach(function(healthcareObject) {
   var latlon = [healthcareObject.Y, healthcareObject.X];
   var options = {
     radius: 2,
@@ -39,7 +39,7 @@ healthcareArray.push(L.circleMarker(latlon, options))
 
   //Accomodation
   var accomodationArray = []  // empty array
-  accomodationData.forEach(function(accomodationObject) {
+  accomodation_data.forEach(function(accomodationObject) {
     var latlon = [accomodationObject.Y, accomodationObject.X];
     var options = {
       radius: 2,
@@ -51,7 +51,7 @@ healthcareArray.push(L.circleMarker(latlon, options))
 
     //Education
     var educationArray = []  // empty array
-    educationData.forEach(function(educationObject) {
+    education_data.forEach(function(educationObject) {
       var latlon = [educationObject.Y, educationObject.X];
       var options = {
         radius: 2,
