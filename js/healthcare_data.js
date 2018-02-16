@@ -1,4 +1,4 @@
-var healthcareData =
+var healthcare_data =
 [
   {
     "X": -74.0799462627203, //five decimals

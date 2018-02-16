@@ -1,4 +1,4 @@
-var financeData = [
+var finance_data = [
   {
     "X": -74.1834314154094, // five decimals
     "Y": 40.5629982684594,

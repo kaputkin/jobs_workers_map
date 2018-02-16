@@ -1,4 +1,4 @@
-var educationData = [
+var education_data = [
   {
     "X": -74.1835044024355, //five decimals
     "Y": 40.5627514037986,

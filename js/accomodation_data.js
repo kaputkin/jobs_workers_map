@@ -1,4 +1,4 @@
-var accomodationData = [
+var accomodation_data = [
   {
     "X": -74.0817457973977,
     "Y": 40.6167926428145,
