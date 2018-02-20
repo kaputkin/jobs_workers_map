@@ -13,11 +13,14 @@ var map =
     	maxZoom: 19,
     }).addTo(map);
 
+var myRenderer = L.canvas({ padding: 0.5 });
+
 //Finance
 var financeArray = []  // empty array
 finance_data.forEach(function(financeObject) {
   var latlon = [financeObject.Y, financeObject.X];
   var options = {
+    renderer: myRenderer,
     radius: 2,
     stroke: false,
     fillColor: financeObject.color,
@@ -30,6 +33,7 @@ var healthcareArray = []  // empty array
 healthcare_data.forEach(function(healthcareObject) {
   var latlon = [healthcareObject.Y, healthcareObject.X];
   var options = {
+    renderer: myRenderer,
     radius: 2,
     stroke: false,
     fillColor: healthcareObject.color,
@@ -42,6 +46,7 @@ healthcareArray.push(L.circleMarker(latlon, options))
   accomodation_data.forEach(function(accomodationObject) {
     var latlon = [accomodationObject.Y, accomodationObject.X];
     var options = {
+      renderer: myRenderer,
       radius: 2,
       stroke: false,
       fillColor: accomodationObject.color,
@@ -54,6 +59,7 @@ healthcareArray.push(L.circleMarker(latlon, options))
     education_data.forEach(function(educationObject) {
       var latlon = [educationObject.Y, educationObject.X];
       var options = {
+        renderer: myRenderer,
         radius: 2,
         stroke: false,
         fillColor: educationObject.color,
